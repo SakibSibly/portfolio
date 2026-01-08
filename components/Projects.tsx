@@ -6,6 +6,7 @@ import { FiGithub, FiExternalLink } from 'react-icons/fi'
 const projects = [
   {
     title: 'Fake News Detection',
+    role: 'Full Stack Developer',
     description: 'AI-powered system to detect false and fraudulent news that works as rumors for targeted news using BERT LLM Model.',
     tech: ['Django', 'BERT LLM Model', 'ORM', 'Tailwind CSS'],
     github: 'https://github.com/SakibSibly/FakeNewsDetection',
@@ -13,6 +14,7 @@ const projects = [
   },
   {
     title: 'JUST CSE Club Website',
+    role: 'Full Stack Developer',
     description: 'Comprehensive web interface for the CSE Club of JUST with features for club activities and event engagement.',
     tech: ['Django REST Framework', 'React.js', 'ORM', 'Tailwind CSS'],
     github: 'https://github.com/SakibSibly/just-cse-club-backend',
@@ -21,6 +23,7 @@ const projects = [
   },
   {
     title: 'Auto Docs Backend',
+    role: 'Backend Developer',
     description: 'Automated document generation system for university administration, reducing manual effort for student and alumni documents.',
     tech: ['Django REST Framework', 'Swagger UI', 'PostgreSQL'],
     github: 'https://github.com/SakibSibly/auto-docs-server',
@@ -45,6 +48,7 @@ const Projects = () => {
             >
               <div className="p-5">
                 <h3 className="text-lg font-semibold mb-2 text-foreground">{project.title}</h3>
+                <p className="text-xs text-primary font-medium mb-2">{project.role}</p>
                 <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                   {project.description}
                 </p>

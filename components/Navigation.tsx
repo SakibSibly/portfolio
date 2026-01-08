@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { FiMenu, FiX } from 'react-icons/fi'
+import { FiMenu, FiX, FiDownload } from 'react-icons/fi'
 import { ThemeToggle } from './ThemeToggle'
 
 const Navigation = () => {
@@ -49,6 +49,14 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
+            <a
+              href="/resumes/Nazmus-Sakib-Sibly-Resume.pdf"
+              download="Nazmus-Sakib-Sibly-Resume.pdf"
+              className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-primary border border-primary rounded-md hover:bg-primary/5 transition-colors"
+            >
+              <FiDownload size={14} />
+              Resume
+            </a>
             <ThemeToggle />
           </div>
 
@@ -79,6 +87,15 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
+            <a
+              href="/resumes/Nazmus-Sakib-Sibly-Resume.pdf"
+              download="Nazmus-Sakib-Sibly-Resume.pdf"
+              className="flex items-center gap-2 px-3 py-2 text-primary hover:bg-secondary rounded-md text-sm font-medium"
+              onClick={() => setIsOpen(false)}
+            >
+              <FiDownload size={16} />
+              Download Resume
+            </a>
           </div>
         </div>
       )}

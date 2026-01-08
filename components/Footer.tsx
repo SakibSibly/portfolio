@@ -24,6 +24,7 @@ const Footer = () => {
               <li><a href="#skills" className="text-muted-foreground hover:text-primary transition">Skills</a></li>
               <li><a href="#achievements" className="text-muted-foreground hover:text-primary transition">Achievements</a></li>
               <li><a href="#projects" className="text-muted-foreground hover:text-primary transition">Projects</a></li>
+              <li><a href="/resumes/Nazmus-Sakib-Sibly-Resume.pdf" download="Nazmus-Sakib-Sibly-Resume.pdf" className="text-muted-foreground hover:text-primary transition">Download Resume</a></li>
             </ul>
           </div>
           <div>

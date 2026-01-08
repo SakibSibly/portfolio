@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FiGithub, FiLinkedin, FiMail, FiMapPin, FiPhone, FiCode } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiMail, FiMapPin, FiPhone, FiCode, FiDownload } from 'react-icons/fi'
 import { SiCodeforces, SiLeetcode } from 'react-icons/si'
 
 const Hero = () => {
@@ -83,9 +83,22 @@ const Hero = () => {
             </motion.a>
           </div>
 
-          <div className="inline-flex items-center gap-3 px-6 py-3 bg-primary/10 border border-primary/20 rounded-full text-sm">
-            <FiCode className="text-primary" size={20} />
-            <span className="text-foreground font-medium">600+ Problems Solved Across Multiple Platforms</span>
+          <div className="flex flex-wrap justify-center items-center gap-4">
+            <motion.a
+              href="/resumes/Nazmus-Sakib-Sibly-Resume.pdf"
+              download="Nazmus-Sakib-Sibly-Resume.pdf"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
+            >
+              <FiDownload size={18} />
+              Download Resume
+            </motion.a>
+
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-primary/10 border border-primary/20 rounded-full text-sm">
+              <FiCode className="text-primary" size={20} />
+              <span className="text-foreground font-medium">600+ Problems Solved Across Multiple Platforms</span>
+            </div>
           </div>
         </motion.div>
       </div>

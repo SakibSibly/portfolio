@@ -20,7 +20,7 @@ const About = () => {
               <div className="flex justify-center md:justify-start">
                 <div className="relative w-48 h-48 rounded-lg overflow-hidden border-2 border-primary/20 bg-secondary/50">
                   <Image
-                    src="/profile.jpg"
+                    src="/pictures/profile.jpg"
                     alt="Nazmus Sakib Sibly"
                     width={192}
                     height={192}

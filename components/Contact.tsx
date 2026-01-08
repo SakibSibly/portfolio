@@ -194,7 +194,7 @@ const Contact = () => {
             
             {status === 'success' && (
               <div className="mb-4 p-3 bg-green-500/10 border border-green-500/50 rounded-lg text-green-600 text-sm">
-                ✓ Message sent successfully! I'll get back to you soon.
+                ✓ Message sent successfully! I'll get back to you soon In-Sha-Allah in the email you provided.
               </div>
             )}
             

@@ -8,7 +8,7 @@ const education = [
     degree: 'B.Sc (Eng.) in Computer Science and Engineering',
     institution: 'Jashore University of Science and Technology',
     year: '2021 - Present',
-    cgpa: '3.82/4.00',
+    cgpa: '3.84/4.00',
     link: 'https://just.edu.bd',
   },
   {
